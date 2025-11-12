@@ -1,6 +1,9 @@
-name: Build and Push Docker Image
+name: Build and Push Docker Image- mock just for config test
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch: # Manual trigger only
 
 jobs:
