@@ -1,18 +1,18 @@
-# Base image
-FROM node:18-alpine
+# Use Node.js LTS image
+FROM node:20-alpine
 
 # Set working directory
 WORKDIR /app
 
-# Copy package files and install dependencies
-COPY package*.json ./
+# Copy package.json and install dependencies
+COPY package.json ./
 RUN npm install
 
-# Copy the rest of the files
+# Copy backend source code
 COPY . .
 
-# Expose app port
-EXPOSE 3000
+# Expose port
+EXPOSE 5000
 
-# Start the app
+# Start the server
 CMD ["node", "index.js"]
