@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/AayushShrestha-25/test-repo-public#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "cors":"^2.8.5"
   }
 }
