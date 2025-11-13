@@ -9,7 +9,7 @@ app.use(express.json());
 const USER = { email: "test@example.com", password: "123456" };
 
 
-app.post("/login", (req, res) => {
+app.post("/api/login", (req, res) => {
 const { email, password } = req.body;
 
 
