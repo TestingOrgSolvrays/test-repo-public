@@ -12,7 +12,7 @@ const USER = {
 };
 
 // Login route
-app.post("/api/login", (req, res) => {
+app.post("/login", (req, res) => {
   const { email, password } = req.body;
 
   if (email === USER.email && password === USER.password) {
