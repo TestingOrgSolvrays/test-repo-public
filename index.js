@@ -11,6 +11,8 @@ const USER = {
   password: "123456"
 };
 
+require('dotenv').config();
+
 // Login route
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
@@ -37,4 +39,8 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
+
+  const test_url = new URL (process.env.TEST_URL);
+
+  console.log("test_url is:", test_url)
 });
