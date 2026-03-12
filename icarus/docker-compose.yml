@@ -1,0 +1,3 @@
+Services:
+  svg-solvgene:
+    image: solvgene/svg-solvege:v1.0.0
