@@ -1,3 +1,3 @@
 Services:
   svg-solvgene:
-    image: solvgene/svg-solvege:v2.0.0
+    image: solvgene/svg-solvege:v3.0.0
